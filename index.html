@@ -50,7 +50,6 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -125,15 +124,19 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-				Hi My Name is Prayuda Zaky Al Mahdi and this is my Portfolio. 
+				Hi! My Name is Prayuda Zaky Al Mahdi and this is my Portfolio. 
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#detail" class="button">My Resume</a>
+			<!-- <a type="button" class="button">My Resume</a> -->
+			<a type="button" class="button" data-bs-toggle="modal"
+				data-bs-target="#exampleModal">
+				  My Bio
+			</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/yuda-poto.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -160,12 +163,36 @@
     </div>
   </section>
 
+  <!--  MODAL -->
+	  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
   <!-- ***** Footer ***** -->
 
   <footer role="contentinfo" class="footer">
     <div class="row">
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://instagram.com/pra_mahdi">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
         <li class="footer__social-link-item">
           <a href="https://twitter.com/mahdi_zaky/" title="Link to Twitter Profile">
             <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
